@@ -12,8 +12,7 @@ node('linux'){
     }
     
     stage('Deploy'){
-        sh 'aws s3 mb s3://SEIS665-01-HW10-JF'
-        sh 'aws s3 cp /workspace/java-pipeline/dist/rectangle-${BUILD_NUMBER}.jar s3://SEIS665-01-HW10-JF'
+        sh 'aws s3 cp /workspace/java-pipeline/dist/rectangle-${BUILD_NUMBER}.jar s3://jrfillipi-assignment-4'
     }
     
     stage('Report'){
