@@ -12,7 +12,7 @@ node('linux'){
     }
     
     stage('Deploy'){
-        sh 'aws s3 cp rectangle-${BUILD_NUMBER}.jar s3://jrfillipi-assignment-4
+        sh 'aws s3 cp rectangle-${BUILD_NUMBER}.jar s3://jrfillipi-assignment-4'
     }
     
     stage('Report'){
